@@ -460,7 +460,7 @@ body::before{
 
   <!-- Toggle -->
   <div class="toggle-group" id="modeToggle">
-    <button class="toggle-btn active" data-mode="road">Road Driver</button>
+    <button class="toggle-btn active" data-mode="road">Linehaul Driver</button>
     <button class="toggle-btn" data-mode="local-la">Local Driver LA</button>
     <button class="toggle-btn" data-mode="local-lv">Local Driver LV</button>
   </div>
@@ -510,7 +510,7 @@ body::before{
 (function(){
   'use strict';
 
-  const STATES = ['CA','NV','AZ','UT','CO','ID'];
+  const STATES = ['CA','NV','AZ','UT','CO','ID','WY'];
   const PASSWORD = 'win2026';
   const MAX_ROWS = 8;
 
@@ -542,7 +542,7 @@ body::before{
   const copyBtn = document.getElementById('copyBtn');
 
   // Excel column order: TRIP# | START ODOM | END ODOM | AZ Miles | AZ Fuel | CA Miles | CA Fuel | ID Miles | ID Fuel | NV Miles | NV Fuel | UT Miles | UT Fuel
-  const EXCEL_STATES = ['AZ','CA','ID','NV','UT'];
+  const EXCEL_STATES = ['AZ','CA','CO','ID','NV','UT','WY'];
 
   /* ─── Login ─── */
   function tryLogin(){
